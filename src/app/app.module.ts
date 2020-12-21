@@ -4,9 +4,11 @@ import { NgxDropzoneModule } from 'ngx-dropzone';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule} from '@angular/common/http';
 
 import { HeadersComponent } from './components/home/headers/headers.component';
 import { HomeVideoComponent } from './components/home-video/home-video.component';
+import { RestServicesRestVideoService} from './services/rest-services-rest-video.service';
 
 import { ReactiveFormsModule} from '@angular/forms';
 import { PrincipalComponent } from './components/perfil/principal/principal.component';
@@ -49,6 +51,8 @@ import { LoginComponent } from './components/login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
     ReactiveFormsModule
     AppRoutingModule,
     FormsModule,

@@ -32,6 +32,7 @@
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
 
 
+
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
@@ -101,7 +102,7 @@
               "src/assets"
             ],
             "styles": [
-<<<<<<< HEAD
+
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
@@ -110,11 +111,7 @@
               "node_modules/@popperjs/core/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
-=======
-              "src/styles.css"
-            ],
-            "scripts": []
->>>>>>> 721c1cb (initial commit)
+
           }
         },
         "lint": {
@@ -145,13 +142,9 @@
       }
     }
   },
-<<<<<<< HEAD
   "defaultProject": "MyVieewsFrontend",
   "cli": {
     "analytics": "2fe5cfda-f659-4894-970d-1d165771d762"
   }
 }
-=======
-  "defaultProject": "MyVieewsFrontend"
-}
->>>>>>> 721c1cb (initial commit)
+
