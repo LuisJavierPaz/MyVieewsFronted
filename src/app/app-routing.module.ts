@@ -40,7 +40,6 @@ const routes: Routes = [
     component: HomeVideoComponent
   }
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
