@@ -11,10 +11,12 @@
       </div>
 
       <div class="class__contenedor__busqueda">
-        <button class="class__button__searchVideo" (click)="methodSearchVideo()"><i class="fas fa-search" style="border: none;background-color: rgba(255, 255, 255, 0);font-size:1.5em ;color: black"></i></button>
+        <button class="class__button__searchVideo" (click)="methodSearchVideo()"><i class="fas fa-search"
+                                                                                    style="border: none;background-color: rgba(255, 255, 255, 0);font-size:1.5em ;color: black"></i>
+        </button>
         <input type="text" class="class__input__searchVideo" id="id__input__searchVideo" placeholder="Buscar"
                [formControl]="searchVideo"/>
-          </div>
+      </div>
 
       <div class="class__contenedor__usuario ">
         <button class="class__button__masVideo"><i class="far fa-plus-square"></i></button>
@@ -37,9 +39,9 @@
           <button class="class__button__informacion"><i class="fab fa-phoenix-framework"></i>Tendencias</button>
         </div>
         <div class="class__contenedor__inferior">
-          <div  class="class__contenedor__imformacionSuscripciones">
-          <h5>Suscripciones</h5>
-          <h5>Nombre del canal</h5>
+          <div class="class__contenedor__imformacionSuscripciones">
+            <h5>Suscripciones</h5>
+            <h5>Nombre del canal</h5>
           </div>
           <div class="class__contenedor__suscripciones">
             <h6>Programador Novato</h6>
@@ -54,223 +56,30 @@
 
 
     <div class="class__contenedor__section  ">
-      <section class="class__section__video">
+      <section class="class__section__video" >
+        <div *ngFor="let video of listVideo ">
+          <div class="card  class__contenedor__card">
+            <div class="card-header">
+              <a class="class__a__linkVideo">
+                <video class="card-img-top" src="{{video.directorio}}"></video>
+              </a>
+            </div>
 
-        <div class="card  class__contenedor__card">
-          <div class="card-header">
-            <a class="class__a__linkVideo">
-              <img class="card-img-top" src="assets/img/test/1.jpg"/>
-            </a>
-          </div>
+            <div class="card-body">
+              <h5 class="card-title">{{video.nombre}}</h5>
+              <p class="card-text">{{video.nombreCanal}}</p>
 
-          <div class="card-body">
-            <h5 class="card-title">Nombre de video</h5>
-            <p class="card-text">Nombre de canal</p>
-
-          </div>
-          <div class="card-footer">
-            <p class="card-text">
-              Views
-            </p>
-            <p class="card-text">
-              Fecha video
-            </p>
+            </div>
+            <div class="card-footer">
+              <p class="card-text">
+                {{video.visualizaciones}}
+              </p>
+              <p class="card-text">
+                {{video.fechaPublicacion}}
+              </p>
+            </div>
           </div>
         </div>
-
-
-        <div class="card class__contenedor__card">
-          <div class="card-header">
-            <a class="class__a__linkVideo">
-              <img class="card-img-top" src="assets/img/test/2.jpg"/>
-            </a>
-          </div>
-
-          <div class="card-body">
-            <h5 class="card-title">Nombre de video</h5>
-            <p class="card-text">Nombre de canal</p>
-          </div>
-
-          <div class="card-footer">
-            <p class="card-text">
-              Views
-            </p>
-            <p class="card-text">
-              Fecha video
-            </p>
-          </div>
-        </div>
-        <div class="card class__contenedor__card">
-          <div class="card-header">
-            <a class="class__a__linkVideo">
-              <img class="card-img-top" src="assets/img/test/3.jpeg"/>
-            </a>
-          </div>
-
-          <div class="card-body">
-            <h5 class="card-title">Nombre de video</h5>
-            <p class="card-text">Nombre de canal</p>
-
-          </div>
-          <div class="card-footer">
-            <p class="card-text">
-              Views
-            </p>
-            <p class="card-text">
-              Fecha video
-            </p>
-          </div>
-        </div>
-        <div class="  card class__contenedor__card">
-          <div class="card-header">
-            <a class="class__a__linkVideo">
-              <img class="card-img-top" src="assets/img/test/4.jpg"/>
-            </a>
-          </div>
-
-          <div class="card-body">
-            <h5 class="card-title">Nombre de video</h5>
-            <p class="card-text">Nombre de canal</p>
-
-          </div>
-          <div class="card-footer">
-            <p class="card-text">
-              Views
-            </p>
-            <p class="card-text">
-              Fecha video
-            </p>
-          </div>
-        </div>
-        <div class="card  class__contenedor__card">
-          <div class="card-header">
-            <a class="class__a__linkVideo">
-              <img class="card-img-top" src="assets/img/test/1.jpg"/>
-            </a>
-          </div>
-
-          <div class="card-body">
-            <h5 class="card-title">Nombre de video</h5>
-            <p class="card-text">Nombre de canal</p>
-
-          </div>
-          <div class="card-footer">
-            <p class="card-text">
-              Views
-            </p>
-            <p class="card-text">
-              Fecha video
-            </p>
-          </div>
-        </div>
-
-        <div class="card  class__contenedor__card">
-          <div class="card-header">
-            <a class="class__a__linkVideo">
-              <img class="card-img-top" src="assets/img/test/1.jpg"/>
-            </a>
-          </div>
-
-          <div class="card-body">
-            <h5 class="card-title">Nombre de video</h5>
-            <p class="card-text">Nombre de canal</p>
-
-          </div>
-          <div class="card-footer">
-            <p class="card-text">
-              Views
-            </p>
-            <p class="card-text">
-              Fecha video
-            </p>
-          </div>
-        </div>
-        <div class="card class__contenedor__card">
-          <div class="card-header">
-            <a class="class__a__linkVideo">
-              <img class="card-img-top" src="assets/img/test/2.jpg"/>
-            </a>
-          </div>
-
-          <div class="card-body">
-            <h5 class="card-title">Nombre de video</h5>
-            <p class="card-text">Nombre de canal</p>
-
-          </div>
-          <div class="card-footer">
-            <p class="card-text">
-              Views
-            </p>
-            <p class="card-text">
-              Fecha video
-            </p>
-          </div>
-        </div>
-        <div class="card class__contenedor__card">
-          <div class="card-header">
-            <a class="class__a__linkVideo">
-              <img class="card-img-top" src="assets/img/test/3.jpeg"/>
-            </a>
-          </div>
-
-          <div class="card-body">
-            <h5 class="card-title">Nombre de video</h5>
-            <p class="card-text">Nombre de canal</p>
-
-          </div>
-          <div class="card-footer">
-            <p class="card-text">
-              Views
-            </p>
-            <p class="card-text">
-              Fecha video
-            </p>
-          </div>
-        </div>
-        <div class="  card class__contenedor__card">
-          <div class="card-header">
-            <a class="class__a__linkVideo">
-              <img class="card-img-top" src="assets/img/test/4.jpg"/>
-            </a>
-          </div>
-
-          <div class="card-body">
-            <h5 class="card-title">Nombre de video</h5>
-            <p class="card-text">Nombre de canal</p>
-
-          </div>
-          <div class="card-footer">
-            <p class="card-text">
-              Views
-            </p>
-            <p class="card-text">
-              Fecha video
-            </p>
-          </div>
-        </div>
-        <div class="card  class__contenedor__card">
-          <div class="card-header">
-            <a class="class__a__linkVideo">
-              <img class="card-img-top" src="assets/img/test/1.jpg"/>
-            </a>
-          </div>
-
-          <div class="card-body">
-            <h5 class="card-title">Nombre de video</h5>
-            <p class="card-text">Nombre de canal</p>
-
-          </div>
-          <div class="card-footer">
-            <p class="card-text">
-              Views
-            </p>
-            <p class="card-text">
-              Fecha video
-            </p>
-          </div>
-        </div>
-
-
       </section>
     </div>
     <!--##################################-->

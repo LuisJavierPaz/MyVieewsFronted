@@ -106,7 +106,7 @@ font-size: 1.5em;
   background-color: #1f1e1e;
 }
 
-.class__contenedor__aside,
+
 .class__section__video {
   padding: 0;
   margin: 0;
@@ -118,7 +118,6 @@ font-size: 1.5em;
 .class__contenedor__aside,
 .class__asside__menu {
   background-color: #1f1e1e;
-
 }
 
 .class__contenedor__superior,
@@ -141,7 +140,8 @@ font-size: 1.5em;
 }
 
 .class__contenedor__aside {
-  width: 47vw;
+  padding: 2em;
+  max-width: 50vw;
 }
 
 .class__asside__menu {
