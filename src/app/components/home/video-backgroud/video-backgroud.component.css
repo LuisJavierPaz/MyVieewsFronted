@@ -1,0 +1,9 @@
+#bgvid{
+position: fixed;
+width:auto;
+  height:auto;
+min-height:100%;
+  min-width: 100%;
+  align-items: center;
+}
+

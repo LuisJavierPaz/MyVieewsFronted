@@ -1,0 +1,10 @@
+.separator{
+  padding-top: 40px;
+  font-size:1em;
+}
+@media screen and (max-width: 980px){
+ .separator {
+   font-size:6px;
+
+ }
+  }

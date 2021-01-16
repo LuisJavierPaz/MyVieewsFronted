@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {font-family:bannschrift;
+            src:url("assets/fonts/BAHNSCHRIFT.TTF") format("opentype");
+}
+
+body{
+  font-family:"bannschrift";
+  font-size:1em;
+  margin: 0;
+  padding: 0;
+}
+
