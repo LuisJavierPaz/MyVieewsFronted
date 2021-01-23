@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+}
+#videoHome {
+    background: none;
+    height: 100%;
+}
+
+#videoHome #homevideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+#videoHome .header .navbar {
+    background-color: transparent !important;
+}
+#videoHome .header .navbar .container-fluid .navbar-toggler {
+  outline: none !important;
+  padding: 0 !important;
+}
+
+#videoHome .header .navbar .container-fluid .collapse .btnLogin{
+  justify-content: space-between;
+}
+
+#videoHome .header .navbar .container-fluid .collapse .btnRegister{
+  justify-content: space-between;
+  color: white;
+  background: #582fb3;
+  border: none;
+}
