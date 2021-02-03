@@ -6,6 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { HeadersComponent } from './components/home/headers/headers.component';
+import { HomeVideoComponent } from './components/home-video/home-video.component';
+
+import { ReactiveFormsModule} from '@angular/forms';
 import { PrincipalComponent } from './components/perfil/principal/principal.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
@@ -27,6 +30,7 @@ import { LoginComponent } from './components/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
+    HomeVideoComponent
 
     HeadersComponent,
     PrincipalComponent,
@@ -40,10 +44,12 @@ import { LoginComponent } from './components/login/login.component';
     ContenidoEstudioPersonalizarComponent,
     VerCanalComponent,
     ContenidoCanalComponent,
-    LoginComponent,
-  ],
+    LoginComponent
+],
   imports: [
     BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule
     AppRoutingModule,
     FormsModule,
     NgbModule,

@@ -30,6 +30,14 @@ const routes: Routes = [
   {
     path: 'home/perfil',
     component: PrincipalComponent
+  },
+  {
+    path: 'home',
+    component: HeadersComponent,
+  },
+  {
+    path: 'home/views',
+    component: HomeVideoComponent
   }
 ];
 

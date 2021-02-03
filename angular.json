@@ -28,11 +28,10 @@
               "src/assets"
             ],
             "styles": [
-<<<<<<< HEAD
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-=======
 
->>>>>>> bf36745 (Primera integracion de datos del proyecto)
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+
+
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
@@ -103,10 +102,6 @@
             ],
             "styles": [
 <<<<<<< HEAD
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-=======
-<<<<<<< HEAD
->>>>>>> bf36745 (Primera integracion de datos del proyecto)
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
