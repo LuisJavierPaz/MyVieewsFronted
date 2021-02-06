@@ -42,6 +42,7 @@
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
 
+
           },
           "configurations": {
             "production": {
@@ -102,7 +103,6 @@
               "src/assets"
             ],
             "styles": [
-
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
@@ -111,7 +111,6 @@
               "node_modules/@popperjs/core/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
-
           }
         },
         "lint": {
@@ -147,4 +146,3 @@
     "analytics": "2fe5cfda-f659-4894-970d-1d165771d762"
   }
 }
-
