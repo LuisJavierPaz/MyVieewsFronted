@@ -28,8 +28,11 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> d087f2b (En el siguiete commit he agregado bootstrap al proyecto dentro de styles en  angular.json, ademas de agregar sus repectivas)
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
@@ -38,8 +41,11 @@
               "node_modules/@popperjs/core/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> d087f2b (En el siguiete commit he agregado bootstrap al proyecto dentro de styles en  angular.json, ademas de agregar sus repectivas)
           },
           "configurations": {
             "production": {

@@ -20,7 +20,11 @@
     "@angular/platform-browser-dynamic": "~11.0.5",
     "@angular/router": "~11.0.5",
     "@popperjs/core": "^2.6.0",
+<<<<<<< HEAD
     "bootstrap": "^5.0.0-beta1",
+=======
+    "bootstrap": "^4.5.3",
+>>>>>>> d087f2b (En el siguiete commit he agregado bootstrap al proyecto dentro de styles en  angular.json, ademas de agregar sus repectivas)
     "jquery": "^3.5.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
