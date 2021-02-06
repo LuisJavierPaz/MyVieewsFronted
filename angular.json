@@ -148,4 +148,8 @@
   "cli": {
     "analytics": "2fe5cfda-f659-4894-970d-1d165771d762"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0c0300f (En el siguiente commit he agregado bootstrap al proyecto fronted asi como con sus respectivas dependencias)
