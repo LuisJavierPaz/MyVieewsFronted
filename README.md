@@ -27,6 +27,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4ccf434 (Update README.md)
 
 ====================
 # MyVieews_Fronted
@@ -49,7 +52,10 @@ than through a system terminal:
   - npm start
 
 Check to have angular 9 installed
+<<<<<<< HEAD
 =======
 >>>>>>> 721c1cb (initial commit)
 =======
 >>>>>>> 721c1cb (initial commit)
+=======
+>>>>>>> 4ccf434 (Update README.md)
