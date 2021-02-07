@@ -9,6 +9,7 @@ import { HeadersComponent } from './components/home/headers/headers.component';
 import { HomeVideoComponent } from './components/home-video/home-video.component';
 import { RestServicesRestVideoService} from './services/rest-services-rest-video.service';
 
+
 import { ReactiveFormsModule} from '@angular/forms';
 import { PrincipalComponent } from './components/perfil/principal/principal.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -32,21 +33,6 @@ import {NgxSpinnerModule} from 'ngx-spinner';
     AppComponent,
     HeadersComponent,
     HomeVideoComponent
-
-    HeadersComponent,
-    PrincipalComponent,
-    SidebarComponent,
-    NavbarPrincipalComponent,
-    ContenidoPerfilComponent,
-    EstudioComponent,
-    SidebarEstudioComponent,
-    ContenidoEstudioPanelComponent,
-    ContenidoEstudioContenidoComponent,
-    ContenidoEstudioPersonalizarComponent,
-    VerCanalComponent,
-    ContenidoCanalComponent,
-
-    HeadersComponent
 
   ],
   imports: [
