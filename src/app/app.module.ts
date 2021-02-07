@@ -9,7 +9,6 @@ import { HeadersComponent } from './components/home/headers/headers.component';
 import { HomeVideoComponent } from './components/home-video/home-video.component';
 import { RestServicesRestVideoService} from './services/rest-services-rest-video.service';
 
-
 import { ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
@@ -23,7 +22,7 @@ import { ReactiveFormsModule} from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule,
+    HttpClientModule
   ],
   providers: [RestServicesRestVideoService],
   bootstrap: [AppComponent]
