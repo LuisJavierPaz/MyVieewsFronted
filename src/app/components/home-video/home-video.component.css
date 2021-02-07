@@ -40,6 +40,7 @@ body {
 
 .class__input__searchVideo {
   width: 40vw;
+  color: #1f1e1e;
 }
 
 
@@ -49,16 +50,17 @@ body {
   justify-content: space-around;
 }
 
-.class__button__masVideo{
+.class__button__masVideo {
   height: 2em;
   width: 2em;
   margin-right: 1em;
   margin-left: 1em;
   border: none;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
 }
-.class__button__masVideo > i{
-font-size: 1.5em;
+
+.class__button__masVideo > i {
+  font-size: 1.5em;
 }
 
 
@@ -69,19 +71,19 @@ font-size: 1.5em;
 
 }
 
-.class__button__searchVideo{
+.class__button__searchVideo {
   padding: 0.4em;
   color: black;
   background-color: rgba(255, 255, 255, 1);
   border: none;
 }
-.class__contenedor__busqueda{
+
+.class__contenedor__busqueda {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
-
 
 
 /*################################################################*/
@@ -124,7 +126,8 @@ font-size: 1.5em;
 .class__contenedor__inferior,
 .class__contenedor__suscripciones,
 .class__contenedor__inferior > h5,
-.class__contenedor__suscripciones > h6 {
+.class__contenedor__suscripciones > h6,
+.class__contenedor__card__searchVideo {
   background-color: #1f1e1e;
 }
 
@@ -141,7 +144,7 @@ font-size: 1.5em;
 
 .class__contenedor__aside {
   padding: 2em;
-  max-width: 50vw;
+  width: 20vw;
 }
 
 .class__asside__menu {
@@ -183,7 +186,7 @@ font-size: 1.5em;
 
 
 .class__contenedor__inferior {
-  margin-top: 40vh;
+  margin-top: 30vh;
 }
 
 .class__contenedor__inferior > h5 {
@@ -251,9 +254,9 @@ section {
 
 
 .card-header {
+  padding: 0;
   display: flex;
   justify-content: center;
-  height: 18vw;
 }
 
 
@@ -275,8 +278,7 @@ section {
   font-size: 2em;
 }
 
-.card-header > a > img {
-  height: 18vw;
+.card-header > a > video {
   width: 18vw;
 }
 
@@ -293,11 +295,11 @@ section {
 }
 
 .class__contenedor__card {
-  width: 27vw;
+  width: 26.5vw;
   margin: 0;
   margin-bottom: 0.3em;
   min-width: 22px;
-  height: 30vw;
+  height: 28vw;
   max-height: 31vw;
   display: flex;
   flex-flow: nowrap column;
@@ -319,10 +321,31 @@ section {
   font-size: 2vh;
 }
 
+/*Buscar video*/
+.class__contenedor__searchVideo{
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.class__contenedor__Videos {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+}
+.class__contenedor__Resultado__video{
+  width: 35%;
+  max-height: 20vh;
+  min-height: 20vh;
+}
 
-
+.class__contenedor__Resultado__video > video{
+  width: 100%;
+  height: 100%;
+}
 /*hover*/
 
 .class__button__masVideo :hover {
-background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }

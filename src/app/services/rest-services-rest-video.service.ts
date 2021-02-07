@@ -9,8 +9,10 @@ import { Video} from '../model/Video';
 export class RestServicesRestVideoService {
   URL_API = 'http://localhost:3000/api';
   constructor( private http: HttpClient) { }
-  getListVideo(): any{
+  public getListVideo(): any{
       return this.http.get(`${this.URL_API}/v1`);
   }
-
+  public getSearchVideo(name: string): any{
+    return this.http.get(`${this.URL_API}/v1/${name}`);
+  }
 }
