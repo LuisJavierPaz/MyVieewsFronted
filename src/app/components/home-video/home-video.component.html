@@ -54,37 +54,50 @@
       </aside>
     </div>
 
+    <div class="class__contenedor__section" *ngIf="visibleSection">
+      <div>
+        <section class="class__section__video">
+          <div *ngFor="let video of listVideo ">
+            <div class="card  class__contenedor__card">
+              <div class="card-header">
+                <a class="class__a__linkVideo">
+                  <video class="" src="{{video.directorio}}"></video>
+                </a>
+              </div>
 
-    <div class="class__contenedor__section  ">
-      <section class="class__section__video" >
-        <div *ngFor="let video of listVideo ">
-          <div class="card  class__contenedor__card">
-            <div class="card-header">
-              <a class="class__a__linkVideo">
-                <video class="card-img-top" src="{{video.directorio}}"></video>
-              </a>
-            </div>
+              <div class="card-body">
+                <h5 class="card-title">{{video.nombre}}</h5>
+                <p class="card-text">{{video.nombreCanal}}</p>
 
-            <div class="card-body">
-              <h5 class="card-title">{{video.nombre}}</h5>
-              <p class="card-text">{{video.nombreCanal}}</p>
-
-            </div>
-            <div class="card-footer">
-              <p class="card-text">
-                {{video.visualizaciones}}
-              </p>
-              <p class="card-text">
-                {{video.fechaPublicacion}}
-              </p>
+              </div>
+              <div class="card-footer">
+                <p class="card-text">
+                  {{video.visualizaciones}}
+                </p>
+                <p class="card-text">
+                  {{video.fechaPublicacion}}
+                </p>
+              </div>
             </div>
           </div>
+        </section>
+      </div>
+    </div>
+    <div class="class__contenedor__searchVideo" *ngIf="!visibleSection">
+      <div class="class__contenedor__Videos" *ngFor="let videoSearch of listSearchVideo">
+        <div class=" class__contenedor__Resultado__video">
+
         </div>
-      </section>
+
+        <div class=" class__contenedor__informacion">
+          <p5>{{videoSearch.nombre}}</p5>
+          <p6>{{videoSearch.visualizaciones}} </p6>
+          <p6>{{videoSearch.nombreCanal}}</p6>
+          <p6>{{videoSearch.descripcion}}</p6>
+        </div>
+      </div>
     </div>
     <!--##################################-->
   </div>
-
 </div>
-
 
