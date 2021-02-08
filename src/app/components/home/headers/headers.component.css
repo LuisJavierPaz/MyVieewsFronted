@@ -6,7 +6,7 @@
     height: 100%;
 }
 
-#videoHome #homevideo {
+#homevideo {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -17,22 +17,65 @@
     height: auto;
     z-index: -1;
 }
-
-#videoHome .header .navbar {
+@media only screen and (min-width: 768px){
+  .dropdown:hover>.dropdown-menu{
+    display: block;
+  }
+}
+.navbar {
     background-color: transparent !important;
 }
-#videoHome .header .navbar .container-fluid .navbar-toggler {
+.navbar-toggler {
   outline: none !important;
   padding: 0 !important;
 }
+.btnLogin{
+  color: white;
+  border: none;
 
-#videoHome .header .navbar .container-fluid .collapse .btnLogin{
-  justify-content: space-between;
 }
-
-#videoHome .header .navbar .container-fluid .collapse .btnRegister{
-  justify-content: space-between;
+.btnRegister{
+  border-radius: 8px;
   color: white;
   background: #582fb3;
+}
+.btnRegister:hover{
   border: none;
+  color: black;
+  box-shadow: 3px 3px 7px #999;
+  transition: 0.3s;
+}
+.conteinerTwo{
+  padding: 170px 30px;
+}
+
+.textUno{
+  font-size: 60px;
+  color: white;
+  text-shadow: 3px 3px 7px black;
+}
+.texDos{
+  font-size: 25px;
+  color: white;
+  margin: 20px 0;
+  text-shadow: 3px 3px 7px black;
+}
+.btnsTwo .btn{
+  margin: 75px 35px;
+  border-radius: 8px;
+}
+button.btnUno{
+  background-color: black;
+  color: white;
+
+}
+button.btnDos{
+  background-color: white;
+  color: black;
+}
+.btnsTwo button.btn:hover{
+  border: none;
+  color: #582fb3;
+  box-shadow: 5px 5px 10px #999;
+  transition: 0.3s;
 }

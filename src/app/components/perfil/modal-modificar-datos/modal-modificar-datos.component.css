@@ -1,0 +1,18 @@
+.modal.show{
+  display: block;
+  background: transparent;
+}
+.modal-content{
+  color: white;
+  background: #232122;
+}
+/*.btn{
+  color: white;
+  background: #21252b;
+  border-radius: 8px;
+}*/
+/*
+.btnCambiarD{
+  color: #101010;
+  background-color: white;
+}*/

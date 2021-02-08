@@ -1,0 +1,24 @@
+@media (min-width:992px) {
+  .vertical-nav {
+    position: fixed;
+    top: 65px;
+    left: 0;
+    width: 175px;
+    height: 100%;
+    background-color: #21252b;
+    overflow-y: auto;
+    padding-top: 20px
+  }
+}
+.dat{
+  padding: 15px 185px;
+}
+
+.btn{
+  color: white;
+  background: #21252b;
+  border-radius: 8px;
+}
+body{
+  background: #101010;
+}

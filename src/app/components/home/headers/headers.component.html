@@ -1,5 +1,5 @@
 <section id="videoHome">
-  <video src="assets/video/videofondo.mp4" id="homevideo" autoplay loop></video>
+  <video src="assets/video/videofondo.mp4" id="homevideo" autoplay loop muted></video>
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
@@ -20,7 +20,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <a class="btnMenuDes "><i class="fas fa-bars"></i></a>
+          <a class="btnMenuDes"><i class="fas fa-bars"></i></a>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="mx-auto">
@@ -34,7 +34,7 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  ...
+                  Empresa
                 </a>
                 <ul
                   class="dropdown-menu dropdown-menu-dark"
@@ -47,10 +47,27 @@
                   <li><a class="dropdown-item" href="#">Contáctanos</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">
-                  <i class="fas fa-cloud-upload-alt"></i> Cargar video</a
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light"
+                  href="#"
+                  id="navbarDarkDropdownMenuLink2"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
+                  Apoyo
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="navbarDarkDropdownMenuLink2"
+                >
+                  <h6 class="dropdown-header">Apoyo</h6>
+                  <li>
+                    <a class="dropdown-item" href="#">Avisos Legales</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Reglamento Comunitario</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="#" tabindex="-1">
@@ -59,16 +76,24 @@
               </li>
             </ul>
           </div>
-          <form class="d-flex">
-            <button class="btnLogin btn btn-link" type="submit" style="color: white">
-              Entrar
-            </button>
-            <button type="button" class="btnRegister btn btn-primary rounded-pill" type="submit">
-              Crear Cuenta
-            </button>
-          </form>
+          <div class="btns form-inline my-2 my-lg-0">
+            <button class="btnLogin btn btn-link me-sm-5" type="submit" style="color: white">Entrar</button>
+            <button class="btnRegister btn my-2 my-sm-0" type="submit">Crear Cuenta</button>
+          </div>
         </div>
       </div>
     </nav>
   </header>
 </section>
+<div class="conteinerTwo container-fluid">
+  <div class="row">
+    <div class="col-sm-5" style="height: 500px; width: 700px">
+      <h1 class="text textUno">Haz volar tu mente</h1>
+      <h3 class="text texDos">Crea y comparte tus vídeos</h3>
+      <div class="btnsTwo form-inline my-2 my-lg-0">
+        <button class="btn btnUno btn-lg me-sm-5" style="width: 225px; height: 60px"  href="#"> <i class="fas fa-play"></i> Ver vídeos</button>
+        <button class="btn btnDos btn-lg my-2 my-sm-0" style="width: 225px; height: 60px" href="#">Únete ahora</button>
+      </div>
+    </div>
+  </div>
+</div>

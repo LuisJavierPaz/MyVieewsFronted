@@ -1,0 +1,11 @@
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-body align-self-lg-center border-0">
+    <h5>¿Estas seguro de dar de baja su cuenta?</h5>
+  </div>
+  <div class="modal-footer border-0">
+    <button type="button" class="btn btn-light" (click)="c('Save click')">ACEPTAR</button>
+    <button type="button" class="btn btn-light" (click)="c('Close click')">CANCELAR</button>
+  </div>
+</ng-template>
+
+<button class="btn btn-light" (click)="open(content)">Dar de baja cuenta</button>
