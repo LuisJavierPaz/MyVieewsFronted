@@ -28,11 +28,6 @@
               "src/assets"
             ],
             "styles": [
-<<<<<<< HEAD
-
-
-=======
->>>>>>> d087f2b (En el siguiete commit he agregado bootstrap al proyecto dentro de styles en  angular.json, ademas de agregar sus repectivas)
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
@@ -41,11 +36,6 @@
               "node_modules/@popperjs/core/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
-<<<<<<< HEAD
-
-
-=======
->>>>>>> d087f2b (En el siguiete commit he agregado bootstrap al proyecto dentro de styles en  angular.json, ademas de agregar sus repectivas)
           },
           "configurations": {
             "production": {
@@ -106,7 +96,7 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+            "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": [
@@ -114,7 +104,7 @@
               "node_modules/@popperjs/core/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
-          }
+    }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -148,8 +138,4 @@
   "cli": {
     "analytics": "2fe5cfda-f659-4894-970d-1d165771d762"
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 0c0300f (En el siguiente commit he agregado bootstrap al proyecto fronted asi como con sus respectivas dependencias)

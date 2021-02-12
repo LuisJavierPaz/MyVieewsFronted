@@ -11,12 +11,22 @@ import { RestServicesRestVideoService} from './services/rest-services-rest-video
 
 
 import { ReactiveFormsModule} from '@angular/forms';
+import { NavNavigationComponent } from './components/home-video/nav-navigation/nav-navigation.component';
+import { AsideMenuComponent } from './components/home-video/aside-menu/aside-menu.component';
+import { SectionHomeVideoComponent } from './components/home-video/section-home-video/section-home-video.component';
+import { SectionSearchVideoComponent } from './components/home-video/section-search-video/section-search-video.component';
+import {SearchVideoServiceService} from './services/servicesVideo/search-video-service.service';
+import {SectionVideoVisibleServiceService} from './services/servicesVideo/visibeSections/section-video-visible-service.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadersComponent,
-    HomeVideoComponent
+    HomeVideoComponent,
+    NavNavigationComponent,
+    AsideMenuComponent,
+    SectionHomeVideoComponent,
+    SectionSearchVideoComponent
 
   ],
   imports: [
@@ -25,7 +35,7 @@ import { ReactiveFormsModule} from '@angular/forms';
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [RestServicesRestVideoService],
+  providers: [RestServicesRestVideoService, SearchVideoServiceService, SectionVideoVisibleServiceService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
