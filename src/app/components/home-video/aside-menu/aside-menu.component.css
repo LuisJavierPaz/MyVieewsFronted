@@ -1,0 +1,96 @@
+.class__contenedor__aside{
+  font-size: 2vh;
+  display: table-cell;
+}
+/*Contenedor aside*/
+.class__contenedor__aside,
+.class__asside__menu {
+  background-color: #1f1e1e;
+}
+
+.class__contenedor__superior,
+.class__contenedor__inferior,
+.class__contenedor__suscripciones,
+.class__contenedor__inferior > h5,
+.class__contenedor__suscripciones > h6,
+.class__contenedor__card__searchVideo {
+  background-color: #1f1e1e;
+}
+
+.class__contenedor__superior {
+  text-align: left;
+}
+
+.class__contenedor__superior > button {
+  margin-top: 1em;
+  display: block;
+  text-align: left;
+  padding: 0.2em;
+}
+
+.class__contenedor__aside {
+  padding: 2em;
+  width: 20vw;
+}
+
+.class__asside__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.4em;
+}
+
+.class__button__informacion {
+  width: 100%;
+  padding: 0;
+  background: none;
+  border: none;
+  font-size: 1.6em;
+  display: flex;
+  flex-wrap: nowrap;
+color: antiquewhite;
+}
+
+.fas {
+  font-size: 1.5em;
+}
+
+.fab {
+  font-size: 1.5em;
+}
+
+.fas,
+.fab {
+  background-color: rgba(0, 0, 0, 0);
+  margin-right: 0.5em;
+}
+
+.class__button__informacion:hover {
+  color: antiquewhite;
+  background-color: rgba(255, 255, 255, 0.052);
+  border-bottom: rgba(255, 255, 255, 0.1) solid 0.2em;
+}
+
+
+.class__contenedor__inferior {
+  margin-top: 30vh;
+}
+
+.class__contenedor__inferior > h5 {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.class__contenedor__suscripciones > h6 {
+  font-size: 1vh;
+}
+
+.class__contenedor__suscripciones {
+  border-top: white solid 1px;
+  font-size: 1vh;
+  margin-top: 2vh;
+}
+.class__contenedor__inferior > h5,
+.class__contenedor__suscripciones > h6 {
+  font-size: 2vh;
+}

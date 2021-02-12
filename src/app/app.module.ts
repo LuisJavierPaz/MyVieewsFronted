@@ -27,6 +27,12 @@ import { ContenidoEstudioPersonalizarComponent } from './components/Estudio/cont
 import { VerCanalComponent } from './components/Canal/ver-canal/ver-canal.component';
 import { ContenidoCanalComponent } from './components/Canal/contenido-canal/contenido-canal.component';
 import {NgxSpinnerModule} from 'ngx-spinner';
+import { NavNavigationComponent } from './components/home-video/nav-navigation/nav-navigation.component';
+import { AsideMenuComponent } from './components/home-video/aside-menu/aside-menu.component';
+import { SectionHomeVideoComponent } from './components/home-video/section-home-video/section-home-video.component';
+import { SectionSearchVideoComponent } from './components/home-video/section-search-video/section-search-video.component';
+import {SearchVideoServiceService} from './services/servicesVideo/search-video-service.service';
+import {SectionVideoVisibleServiceService} from './services/servicesVideo/visibeSections/section-video-visible-service.service';
 
 @NgModule({
   declarations: [
@@ -51,7 +57,7 @@ import {NgxSpinnerModule} from 'ngx-spinner';
     HttpClientModule,
     NgxSpinnerModule,
   ],
-  providers: [],
+  providers: [RestServicesRestVideoService, SearchVideoServiceService, SectionVideoVisibleServiceService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
