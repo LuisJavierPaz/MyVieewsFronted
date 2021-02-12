@@ -1,0 +1,30 @@
+<div class="class__contenedor__homeVideo  ">
+  <div class="class__contenedor__nav">
+    <nav class="class__nav__navegacion">
+      <div class="class__contenedor__logo">
+        <a class="class__a__image" (click)="visibleSectionEvent.setVisibleSectionHome(true)" href="home/views">
+          <img
+            src="assets/img/logo.png"
+            alt="MyViews"
+          />
+        </a>
+      </div>
+
+      <div class="class__contenedor__busqueda">
+        <button class="class__button__searchVideo" (click)="methodSearchVideo()"><i class="fas fa-search"
+                                                                                    style="border: none;background-color: rgba(255, 255, 255, 0);font-size:1.5em ;color: black"></i>
+        </button>
+        <input type="text" class="class__input__searchVideo" id="id__input__searchVideo" placeholder="Buscar"
+               [formControl]="nameSearchVideo"/>
+      </div>
+
+      <div class="class__contenedor__usuario ">
+        <button class="class__button__masVideo"><i class="far fa-plus-square"></i></button>
+
+        <button class="class__button__masVideo"><i class="far fa-bell"></i></button>
+
+        <button class="class__button__masVideo"><i class="fas fa-user"></i></button>
+      </div>
+    </nav>
+  </div>
+</div>
