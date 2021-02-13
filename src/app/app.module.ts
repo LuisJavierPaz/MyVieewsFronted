@@ -8,6 +8,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {HeadersComponent} from './components/home/headers/headers.component';
 import {HomeVideoComponent} from './components/home-video/home-video.component';
 import {RestServicesRestVideoService} from './services/rest-services-rest-video.service';
+import { NgxDropzoneModule} from 'ngx-dropzone';
 
 
 import {ReactiveFormsModule} from '@angular/forms';
@@ -37,10 +38,12 @@ import { ViewVideoComponent } from './components/view-video/view-video.component
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    NgxDropzoneModule,
     HttpClientModule,
     CloudinaryModule.forRoot(Cloudinary, {
       cloud_name: 'dzkcr9eec', upload_preset: 'lp8lafrr'
-    })
+    }),
+
   ],
   providers: [RestServicesRestVideoService, SearchVideoServiceService, SectionVideoVisibleServiceService],
   bootstrap: [AppComponent]
