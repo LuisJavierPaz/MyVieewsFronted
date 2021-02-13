@@ -1,30 +1,97 @@
+<div class="class__contenedor__nav">
+  <nav class="class__nav__navegacion">
+    <div class="class__contenedor__logo">
+      <a class="class__a__image" (click)="visibleSectionEvent.setVisibleSectionHome(true)" href="home/views">
+        <img
+          src="assets/img/logo.png"
+          alt="MyViews"
+        />
+      </a>
+    </div>
 
-  <div class="class__contenedor__nav">
-    <nav class="class__nav__navegacion">
-      <div class="class__contenedor__logo">
-        <a class="class__a__image" (click)="visibleSectionEvent.setVisibleSectionHome(true)" href="home/views">
-          <img
-            src="assets/img/logo.png"
-            alt="MyViews"
-          />
-        </a>
-      </div>
+    <div class="class__contenedor__busqueda">
+      <button class="class__button__searchVideo" (click)="methodSearchVideo()"><i class="fas fa-search"
+                                                                                  style="border: none;background-color: rgba(255, 255, 255, 0);font-size:1.5em ;color: black"></i>
+      </button>
+      <input type="text" class="class__input__searchVideo" id="id__input__searchVideo" placeholder="Buscar"
+             [formControl]="nameSearchVideo"/>
+    </div>
 
-      <div class="class__contenedor__busqueda">
-        <button class="class__button__searchVideo" (click)="methodSearchVideo()"><i class="fas fa-search"
-                                                                                    style="border: none;background-color: rgba(255, 255, 255, 0);font-size:1.5em ;color: black"></i>
-        </button>
-        <input type="text" class="class__input__searchVideo" id="id__input__searchVideo" placeholder="Buscar"
-               [formControl]="nameSearchVideo"/>
-      </div>
+    <div class="class__contenedor__usuario ">
+      <button class="class__button__masVideo" (click)="upload(uploadVideo)" <i class="far fa-plus-square"></i></button>
 
-      <div class="class__contenedor__usuario ">
-        <button class="class__button__masVideo"><i class="far fa-plus-square"></i></button>
+      <button class="class__button__masVideo"><i class="far fa-bell"></i></button>
 
-        <button class="class__button__masVideo"><i class="far fa-bell"></i></button>
+      <button class="class__button__masVideo"><i class="fas fa-user"></i></button>
+    </div>
+  </nav>
+</div>
 
-        <button class="class__button__masVideo"><i class="fas fa-user"></i></button>
-      </div>
-    </nav>
+
+<!--
+Templates
+-->
+
+<ng-template #uploadVideo>
+  <div class="modal-header">
+    <ul class="nav nav-tabs container">
+      <li class="nav-item">
+        <a class="nav-link active">Subir Videos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">Detalle Video</a>
+      </li>
+    </ul>
   </div>
+  <div class="modal-body" *ngIf="modalVisible">
+    <ngx-dropzone (change)="onSelect($event)">
+      <ngx-dropzone-label>Drop it, baby!</ngx-dropzone-label>
+      <ngx-dropzone-video-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f">
+        <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+      </ngx-dropzone-video-preview>
+    </ngx-dropzone>
+    <div class="class__seleccion__video">
+      <button class="btn">
+        SELECCIONAR VIDEO
+      </button>
+    </div>
+  </div>
+
+  <div class="modal-body" *ngIf="!modalVisible">
+    <div class="modal__detalle__video">
+      <div class="class__contenedor__detalle__left">
+        <div class="class__preview__video">
+          <ngx-dropzone-video-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f">
+            <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+          </ngx-dropzone-video-preview>
+        </div>
+        <div class="class__tag__video">
+          <div class="class__visibilida">
+            <select>
+              <option>Publico</option>
+              <option>Privado</option>
+            </select>
+          </div>
+          <div class="class_categoria">
+            <select>
+              <option>Publico</option>
+              <option>Privado</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="class__contenedor__detalle__right">
+        <div class="class__input__name__video">
+          <input placeholder="NOMBRE VIDEO" type="text"/>
+        </div>
+        <div class="class__area__descripcion__video">
+          <textarea rows="10" placeholder="DESCRIPCION">
+          </textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+
 

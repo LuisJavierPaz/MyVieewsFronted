@@ -1,0 +1,168 @@
+*{
+  background: black;
+}
+body{
+  background: black;
+}
+
+.class__contenedor__body{
+  background: black;
+  overflow: auto;
+  height: 90vh;
+  width: auto;
+  display: flex;
+}
+.card-footer{
+  color: white;
+}
+
+.class__contenedor__comentar{
+  color: white;
+}
+
+.card-header{
+  padding: 0;
+}
+.class__principal__nombreVideo{
+  display: block;
+}
+.class__contenedor__informacion__Video{
+  display: flex;
+  justify-content: space-between;
+}
+.class__contenedor__fecha__views{
+  display: flex;
+  justify-content: start;
+}
+.class__contenedor__fecha__views > h6,
+.class__contenedor__gustas__reporte > h6{
+  margin-right: 1.5em;
+}
+
+
+.class__contenedor__gustas__reporte,
+.class__contenedor__final__miembros{
+  display: flex;
+  justify-content: end;
+}
+
+/*================================================================*/
+
+
+.class__contenedor__canal__miembro{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+.class__contenedor__canal__suscripciones{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.class__contenedor__intereses > button {
+  margin-right: 1.5em ;
+}
+
+.class__contenedor__descripcion{
+  margin-top: 1em;
+  border-top: white 1px solid;
+  font-style: normal;
+  width: auto;
+  height: 7em;
+  max-height: 7em;
+  overflow: auto;
+  padding-top: 1em;
+  background: #2a2626;
+}
+.class__descripcion,
+.class__descripcion > label{
+  background: #2a2626;
+}
+
+.class__contenedor__left{
+  display: flex;
+  flex-direction: column;
+  padding-left: 3em;
+  padding-bottom: 2em;
+  height: auto;
+}
+
+/*///////////////////////////////////////////*/
+.class__input__icon{
+  display: flex;
+  align-items: center;
+}
+.class__input__icon,
+.class__input__icon > input{
+  width: 100%;
+  font-size: 1em;
+  padding:0.5em;
+  color: white;
+}
+.class__input__icon > label > i{
+  font-size: 2em;
+  margin-right: 0.5em;
+}
+
+/*===================================*/
+.class__contenedor__btn__comentarios{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1em;
+}
+.class__contenedor__btn__comentarios > button{
+  margin-right: 1.5em;
+}
+
+
+/*//////////////////////////////////////*/
+.contenedor__datos__comentario{
+  border-top: white 1px solid ;
+  border-bottom: white 1px solid ;
+  margin-bottom: 0.5em;
+}
+
+.contenedor__datos__comentario > label{
+  font-size: 1em;
+  font-style: normal;
+}
+.class__contenedor__comentario{
+padding-bottom: 3em;
+}
+.class__contenedor__videosExtras > div{
+  color: white;
+  display: flex ;
+  align-items: stretch;
+  padding-left: 2.5em;
+  padding-top: 0;
+  height: 100%;
+  flex-wrap: wrap ;
+}
+.class__contenedor__videoExtra{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  cursor: pointer;
+}
+.class__contenedor__informacion__video{
+  padding-top: 1em;
+  padding-left: 1em;
+  font-size: 1em;
+}
+.class__contenedor__informacion__video > label{
+  display: block;
+}
+cl-video{
+  height: 100%
+}
+
+.btclass__cancelar,
+.class__miembro{
+  background: rgba(255,255,255,1);
+}
+.class__comentar,
+.class__Suscribirse{
+  color: white;
+  background: rgb(112, 15, 164)
+}
