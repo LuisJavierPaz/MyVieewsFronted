@@ -1,6 +1,38 @@
 .class__contenedor__searchVideo{
-  background: antiquewhite;
-  width: 100%;
+  overflow: auto;
+  margin-bottom: 1em;
+  height: 90vh;
   padding: 0.2em;
+  width: 82vw;
+
 }
+.class__contenedor__Videos{
+  display: flex;
+  align-items: normal;
+  flex-wrap: wrap;
+
+}
+.class__contenedor__vis__fecha{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.class__contenedor__vis__fecha > h6{
+  margin-right: 2em;
+}
+.class__contenedor__informacion{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 2em;
+}
+
+
+cl-video{
+  height: 100%;
+  margin-left: 4em;
+}
+
+
 
