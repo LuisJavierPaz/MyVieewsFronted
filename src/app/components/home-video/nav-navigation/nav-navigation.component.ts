@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {SectionVideoVisibleServiceService} from '../../../services/servicesVideo/visibeSections/section-video-visible-service.service';
-import { NgbModal} from '@ng-'
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-nav-navigation',
@@ -12,6 +12,7 @@ export class NavNavigationComponent implements OnInit {
   nameSearchVideo = new FormControl('');
   modalVisible = true;
   files: File[] = [];
+
   constructor(public visibleSectionEvent: SectionVideoVisibleServiceService, private modalUpload: NgbModal) {
   }
 
@@ -27,9 +28,6 @@ export class NavNavigationComponent implements OnInit {
 
   modelDetalle(): any {
   }
-  upload(upload: any): any{
-
-  }
 
   onSelect(event: any): void {
     console.log(event);
@@ -39,5 +37,8 @@ export class NavNavigationComponent implements OnInit {
   onRemove(event: any): void {
     console.log(event);
     this.files.splice(this.files.indexOf(event), 1);
+  }
+  upload(uploadVideo: any): any {
+  this.modalUpload.open(uploadVideo);
   }
 }
