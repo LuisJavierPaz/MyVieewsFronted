@@ -76,6 +76,7 @@ import { ViewVideoComponent } from './components/view-video/view-video.component
     CloudinaryModule.forRoot(Cloudinary, {
       cloud_name: 'dzkcr9eec', upload_preset: 'lp8lafrr'
     }),
+    NgxSpinnerModule,
 
     })
     NgxSpinnerModule,
