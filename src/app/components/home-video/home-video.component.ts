@@ -15,7 +15,6 @@ export class HomeVideoComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
   /*=============Metodo que carga una lista dentro de la seccion de busqueda=======================================*/
 
 }
