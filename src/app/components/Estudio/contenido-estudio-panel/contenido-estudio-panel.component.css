@@ -1,0 +1,15 @@
+.content2{
+  width: 100vh;
+  height: 100%;
+}
+.table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.table td,.table th{
+  padding: 12px 15px;
+  border: 0;
+}
+.inputss{
+  width: 100%;
+}

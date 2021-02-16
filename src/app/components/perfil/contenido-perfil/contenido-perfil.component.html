@@ -1,0 +1,161 @@
+<div class="content container-fluid" style="padding: 10px 50px">
+  <form>
+    <div class="form-group row">
+      <div class="col">
+        <label class="h5 text-light">Perfil</label>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-form-label text-light">NOMBRE DE USUARIO:</label>
+      <div class="col-md-3">
+         <h3 class="text-light">{{cuenta.nombreUsuario}}</h3>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label formControlName="" class="col-form-label text-light">NOMBRES:</label>
+      <div class="col-md-4">
+        <h3 class="text-light">{{persona.nombre}}</h3>
+      </div>
+      <label class="col-form-label text-light">APELLIDOS:</label>
+      <div class="col-md-4">
+        <h3 class="text-light">{{persona.apellido}}</h3>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-form-label text-light">FECHA DE NACIMIENTO:</label>
+      <div class="col-md-4">
+        <h3 type="date" class="text-light">{{persona.fechaNacimiento}}</h3>
+      </div>
+      <label class="col-form-label text-light">TELÉFONO:</label>
+      <div class="col-md-3">
+        <h3 class="text-light">{{persona.telefono}}</h3>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="text-light col-form-label">CORREO ELECTRÓNICO:</label>
+      <div class="col-sm-4">
+        <h3 class="text-light">{{cuenta.correoElectronico}}</h3>
+      </div>
+      <label class="col-form-label text-light">GÉNERO:</label>
+      <div class="col-md-3">
+        <h3 class="text-light">{{persona.genero}}</h3>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="text-light col-form-label">CONTRASEÑA:</label>
+      <div class="col-sm-2">
+        <h3 type="password" class="text-light">{{cuenta.clave}}</h3>
+      </div>
+    </div>
+  </form>
+  <div class="container" style="padding: 60px 80px;">
+    <ng-template #content let-modal>
+      <div class="modalClave">
+        <div class="modal-header border-0">
+          <h2 class="modal-title col-11 text-center">Modificar Contraseña</h2>
+          <button type="button" class="close col-1" style="color: white" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body border-0 justify-content-center">
+          <div class="form-group">
+            <label for="InpConAnt">CONTRASEÑA ANTIGUA</label>
+            <input type="password" class="form-control" id="InpConAnt">
+          </div>
+          <div class="form-group">
+            <label for="InpConNue">CONTRASEÑA NUEVA</label>
+            <input type="password" class="form-control" id="InpConNue">
+          </div>
+          <div class="form-group">
+            <label for="InpConConf">CONFIRMAR CONTRASEÑA</label>
+            <input type="password" class="form-control" id="InpConConf">
+          </div>
+        </div>
+        <div class="modal-footer border-0 d-flex justify-content-center" style="padding: 40px 20px">
+          <button type="button" class="btn btn-light mr-sm-5 btn-sm" (click)="modal.close('Save click')">MODIFICAR</button>
+          <button type="button" class="btn btn-light btn-sm" (click)="modal.close('Close click')">CANCELAR</button>
+        </div>
+      </div>
+    </ng-template>
+    <button type="button" class="btn btn-light btn-sm mr-sm-5" (click)="openVerticallyCentered(content)">Cambiar Clave</button>
+    <ng-template #content1 let-modal>
+      <div class="modalDatos">
+        <div class="modal-header border-0">
+          <h2 class="modal-title col-11 text-center">Modificar Datos</h2>
+          <button type="button" class="close col-1" style="color: white" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body border-0">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="InpConAnt">NOMBRES</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="InpConNue">APELLIDOS</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="InpConConf">NOMBRE DE USUARIO</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="SelectG">GÉNERO</label>
+                <select class="form-select form-control" id="SelectG">
+                  <option selected>Seleccionar</option>
+                  <option>Masculino</option>
+                  <option>Femenino</option>
+                  <option>Otros</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="form-group">
+                <label for="InpCorr">FECHA DE NACIMIENTO</label>
+                <input type="date" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="InpCorr">CORREO ELECTRÓNICO</label>
+                <input type="email" class="form-control" id="InpCorr">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="InpTelef">TELÉFONO</label>
+                <input type="number" class="form-control" id="InpTelef">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer border-0 d-flex justify-content-center">
+          <button type="button" class="btn btn-light mr-sm-5" (click)="modal.close('Save click')">MODIFICAR</button>
+          <button type="button" class="btn btn-light mr-sm-0" (click)="modal.close('Close click')">CANCELAR</button>
+        </div>
+      </div>
+    </ng-template>
+    <button class="btn btn-light btn-sm mr-sm-5" (click)="openLg(content1)">Cambiar Datos</button>
+    <ng-template #content2 let-c="close" let-d="dismiss">
+      <div class="modalBajaCuenta">
+        <div class="modal-body border-0">
+          <h3 class="text-lg-center">¿Estas seguro de dar de baja su cuenta?</h3>
+        </div>
+        <div class="modal-footer border-0 d-flex justify-content-center">
+          <button type="button" class="btn btn-light btn-sm mr-sm-4" (click)="c('Save click')">ACEPTAR</button>
+          <button type="button" class="btn btn-light btn-sm" (click)="c('Close click')">CANCELAR</button>
+        </div>
+      </div>
+    </ng-template>
+
+    <button class="btn btn-light btn-sm" (click)="openSm(content2)">Dar de baja cuenta</button>
+  </div>
+</div>

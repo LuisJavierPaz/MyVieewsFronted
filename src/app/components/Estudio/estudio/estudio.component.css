@@ -1,0 +1,6 @@
+.containerBody2{
+  padding: 0;
+  display: flex;
+  height: 90vh;
+  flex-wrap: nowrap;
+}

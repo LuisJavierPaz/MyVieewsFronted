@@ -1,0 +1,96 @@
+<div class="content container-fluid">
+  <div class="border" style="height: 200px ; width: 1050px ;"></div>
+  <div class="border-0" style="width: 1050px ; background: #333333; color: white">
+    <div class="card" style="width: 1000px; background: transparent!important; border: 0;" >
+      <div class="row no-gutters">
+        <div class="col-sm-2">
+            <img src="assets/img/videoP.png" height="140px" width="140px" style="padding: 20px">
+        </div>
+        <div class="col-sm-5">
+            <div class="card-body">
+                <h4 class="card-title">Nombre del Canal</h4>
+                <h4 class="card-text">Numero de suscriptores</h4>
+            </div>
+        </div>
+        <div class="col-sm-5 align-self-center text-center">
+          <button class="btn btn-light mr-4">MIEMBRO</button>
+          <button class="btnsucrip btn mr-4">SUSCRIBIRSE</button>
+          <button class="btn btn-light mr-0"><i class="fas fa-bell"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="width: 1050px; color: white">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">INICIO</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">VIDEOS</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <ng-template #content let-c="close" let-d="dismiss">
+          <div class="modalReportarCanal">
+            <div class="modal-body border-0">
+              <h3 class="text-lg-center">¿Estas seguro de reportar este canal?</h3>
+            </div>
+            <div class="modal-footer border-0 d-flex justify-content-center">
+              <button type="button" class="btn btn-light btn-sm mr-sm-4" (click)="c('Save click')">ACEPTAR</button>
+              <button type="button" class="btn btn-light btn-sm" (click)="c('Close click')">CANCELAR</button>
+            </div>
+          </div>
+        </ng-template>
+        <button class="btn btn-link" (click)="openSm(content)"><i class="fab fa-font-awesome-flag"></i></button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="card" style="width: 1000px; background: transparent!important; border: 0;" >
+          <div class="row no-gutters">
+            <div class="col-sm-4">
+              <img src="assets/img/videoP.png" height="200px" width="300px" style="padding: 20px">
+            </div>
+            <div class="col-sm-5">
+              <div class="card-body">
+                <h4 class="card-title">Nombre del video</h4>
+                <h4 class="card-text">Número de vistas</h4>
+                <h4 class="card-text">Nombre del canal</h4>
+                <h4 class="card-text">Fecha de publicación</h4>
+                <h4 class="card-text">Descripción</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="card-deck" style="padding: 20px; background: transparent!important; ">
+          <div class="card" style="background: transparent!important; ">
+            <img src="assets/img/videoP.png" height="200px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nombre del video</h5>
+              <p class="card-text">Numero de vistas</p>
+              <p class="card-text">Fecha de publicacion</p>
+            </div>
+          </div>
+          <div class="card" style="background: transparent!important; ">
+            <img src="assets/img/videoP.png" height="200px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nombre del video</h5>
+              <p class="card-text">Numero de vistas</p>
+              <p class="card-text">Fecha de publicacion</p>
+            </div>
+          </div>
+          <div class="card" style="background: transparent!important; ">
+            <img src="assets/img/videoP.png" height="200px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nombre del video</h5>
+              <p class="card-text">Numero de vistas</p>
+              <p class="card-text">Fecha de publicacion</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

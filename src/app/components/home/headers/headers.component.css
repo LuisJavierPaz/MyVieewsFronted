@@ -60,18 +60,20 @@
   margin: 20px 0;
   text-shadow: 3px 3px 7px black;
 }
-.btnsTwo .btn{
-  margin: 75px 35px;
-  border-radius: 8px;
-}
+
 button.btnUno{
   background-color: black;
+  padding: 20px;
   color: white;
 
 }
 button.btnDos{
   background-color: white;
   color: black;
+}
+.btnsTwo .btn{
+  margin: 35px 0px;
+  border-radius: 8px;
 }
 .btnsTwo button.btn:hover{
   border: none;
