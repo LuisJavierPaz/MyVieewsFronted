@@ -4,6 +4,7 @@ import { NgxDropzoneModule } from 'ngx-dropzone';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { HeadersComponent } from './components/home/headers/headers.component';
 import { PrincipalComponent } from './components/perfil/principal/principal.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -25,6 +26,7 @@ import {NgxSpinnerModule} from 'ngx-spinner';
 @NgModule({
   declarations: [
     AppComponent,
+<<<<<<< HEAD
     HeadersComponent,
     PrincipalComponent,
     SidebarComponent,
@@ -37,6 +39,10 @@ import {NgxSpinnerModule} from 'ngx-spinner';
     ContenidoEstudioPersonalizarComponent,
     VerCanalComponent,
     ContenidoCanalComponent,
+=======
+    HeadersComponent
+
+>>>>>>> bf36745 (Primera integracion de datos del proyecto)
   ],
   imports: [
     BrowserModule,
