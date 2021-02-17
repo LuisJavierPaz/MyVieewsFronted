@@ -4,6 +4,7 @@ import { NgxDropzoneModule } from 'ngx-dropzone';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { HeadersComponent } from './components/home/headers/headers.component';
 import { PrincipalComponent } from './components/perfil/principal/principal.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -26,6 +27,7 @@ import { LoginComponent } from './components/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
+
     HeadersComponent,
     PrincipalComponent,
     SidebarComponent,
