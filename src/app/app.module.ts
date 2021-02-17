@@ -10,33 +10,24 @@ import {HomeVideoComponent} from './components/home-video/home-video.component';
 import {RestServicesRestVideoService} from './services/rest-services-rest-video.service';
 import {NgxDropzoneModule} from 'ngx-dropzone';
 
-
-import { ReactiveFormsModule} from '@angular/forms';
-import { PrincipalComponent } from './components/perfil/principal/principal.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {PrincipalComponent} from './components/perfil/principal/principal.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { NavbarPrincipalComponent } from './components/navbar-principal/navbar-principal.component';
-import { ContenidoPerfilComponent } from './components/perfil/contenido-perfil/contenido-perfil.component';
-import { EstudioComponent } from './components/Estudio/estudio/estudio.component';
-import { SidebarEstudioComponent } from './components/Estudio/sidebar-estudio/sidebar-estudio.component';
-import { ContenidoEstudioPanelComponent } from './components/Estudio/contenido-estudio-panel/contenido-estudio-panel.component';
-import { ContenidoEstudioContenidoComponent } from './components/Estudio/contenido-estudio-contenido/contenido-estudio-contenido.component';
-import { ContenidoEstudioPersonalizarComponent } from './components/Estudio/contenido-estudio-personalizar/contenido-estudio-personalizar.component';
-import { VerCanalComponent } from './components/Canal/ver-canal/ver-canal.component';
-import { ContenidoCanalComponent } from './components/Canal/contenido-canal/contenido-canal.component';
-import {NgxSpinnerModule} from 'ngx-spinner';
-import { NavNavigationComponent } from './components/home-video/nav-navigation/nav-navigation.component';
-import { AsideMenuComponent } from './components/home-video/aside-menu/aside-menu.component';
-import { SectionHomeVideoComponent } from './components/home-video/section-home-video/section-home-video.component';
-import { SectionSearchVideoComponent } from './components/home-video/section-search-video/section-search-video.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import {SidebarComponent} from './components/sidebar/sidebar.component';
+import {NavbarPrincipalComponent} from './components/navbar-principal/navbar-principal.component';
+import {ContenidoPerfilComponent} from './components/perfil/contenido-perfil/contenido-perfil.component';
+import {EstudioComponent} from './components/Estudio/estudio/estudio.component';
+import {SidebarEstudioComponent} from './components/Estudio/sidebar-estudio/sidebar-estudio.component';
+import {ContenidoEstudioPanelComponent} from './components/Estudio/contenido-estudio-panel/contenido-estudio-panel.component';
+import {ContenidoEstudioContenidoComponent} from './components/Estudio/contenido-estudio-contenido/contenido-estudio-contenido.component';
+import {ContenidoEstudioPersonalizarComponent} from './components/Estudio/contenido-estudio-personalizar/contenido-estudio-personalizar.component';
+import {VerCanalComponent} from './components/Canal/ver-canal/ver-canal.component';
+import {ContenidoCanalComponent} from './components/Canal/contenido-canal/contenido-canal.component';
 import {NavNavigationComponent} from './components/home-video/nav-navigation/nav-navigation.component';
 import {AsideMenuComponent} from './components/home-video/aside-menu/aside-menu.component';
 import {SectionHomeVideoComponent} from './components/home-video/section-home-video/section-home-video.component';
-import {SectionSearchVideoComponent} from './components/home-video/section-search-video/section-search-video.component';
+import {SectionSearchVideoComponent} from './components/sub-home-search-component/section-search-video/section-search-video.component';
 import {SearchVideoServiceService} from './services/servicesVideo/search-video-service.service';
 import {SectionVideoVisibleServiceService} from './services/servicesVideo/visibeSections/section-video-visible-service.service';
 import {CloudinaryModule} from '@cloudinary/angular-5.x';
@@ -47,7 +38,7 @@ import {SpinnerService} from './services/spinner/spinner.service';
 import {NgxSpinnerModule} from 'ngx-spinner';
 import {InterceptorService} from './services/spinner/interceptor.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { SubHomeSearchComponentComponent } from './components/sub-home-search-component/sub-home-search-component.component';
+import {SubHomeSearchComponentComponent} from './components/sub-home-search-component/sub-home-search-component.component';
 import {RestCategoriaService} from './services/rest-categoria.service';
 import {ComentariosService} from './services/comentarios.service';
 
@@ -61,15 +52,26 @@ import {ComentariosService} from './services/comentarios.service';
     AsideMenuComponent,
     SectionHomeVideoComponent,
     SectionSearchVideoComponent,
-    ViewVideoComponent
-
+    ViewVideoComponent,
+    SubHomeSearchComponentComponent,
+    PrincipalComponent,
+    SidebarComponent,
+    NavbarPrincipalComponent,
+    ContenidoPerfilComponent,
+    EstudioComponent,
+    SidebarEstudioComponent,
+    ContenidoEstudioPanelComponent,
+    ContenidoEstudioContenidoComponent,
+    ContenidoEstudioPersonalizarComponent,
+    VerCanalComponent,
+    ContenidoCanalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
-    ReactiveFormsModule
+    HttpClientModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     FormsModule,
     NgbModule,
@@ -83,8 +85,6 @@ import {ComentariosService} from './services/comentarios.service';
       cloud_name: 'dzkcr9eec', upload_preset: 'lp8lafrr'
     }),
     NgxSpinnerModule,
-
-    })
     NgxSpinnerModule,
     BrowserAnimationsModule,
     FormsModule
