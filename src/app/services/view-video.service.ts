@@ -6,15 +6,17 @@ import {Router} from '@angular/router';
 })
 export class ViewVideoService {
   externalId: any;
+  video: any;
   constructor(private route: Router) {
   }
 
-  public navigate(id: string): void {
+  public navigate(id: string, video: any): void {
     this.externalId = id;
+    this.video = video;
     this.route.navigate(['/home/play', id]);
   }
-  public getId(): any{
-    return this.externalId;
+  public getVideo(): any{
+    return this.video;
   }
 }
 

@@ -10,7 +10,7 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: '/home'
+    redirectTo: '/home/views'
   },
   {
     path: 'home',
@@ -21,10 +21,14 @@ const routes: Routes = [
     component: HomeVideoComponent
   },
   {
-    path: 'home/play',
+    path: 'home/play/:id',
     component: ViewVideoComponent
+  },
+  {
+    path: 'home/search/:nombre',
+    component: SubHomeSearchComponentComponent
   }
-];
+  ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
