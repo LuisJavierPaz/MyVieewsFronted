@@ -21,6 +21,7 @@ import { ContenidoEstudioPersonalizarComponent } from './components/Estudio/cont
 import { VerCanalComponent } from './components/Canal/ver-canal/ver-canal.component';
 import { ContenidoCanalComponent } from './components/Canal/contenido-canal/contenido-canal.component';
 import {NgxSpinnerModule} from 'ngx-spinner';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import {NgxSpinnerModule} from 'ngx-spinner';
     ContenidoEstudioPersonalizarComponent,
     VerCanalComponent,
     ContenidoCanalComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

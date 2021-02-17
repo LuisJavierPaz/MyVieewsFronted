@@ -1,0 +1,32 @@
+<!------ Include the above in your HEAD tag ---------->
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+            <h2>Inicio de sesión</h2>
+        </div>
+
+        <!-- Login Form -->
+        <form [formGroup]="loginForm" (ngSubmit)="validar()">
+            <div class=" form-group">
+                <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+            </div>
+            <div class=" form-group">
+                <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+            </div>
+            <div class=" form-group">
+
+                <input type="submit" class="fadeIn fourth" value="Iniciar sesión">
+            </div>
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+            <a class="underlineHover" href="">Forgot Password?</a>
+            <a class="underlineHover" href="#">Crear cuenta?</a>
+        </div>
+
+    </div>
+</div>

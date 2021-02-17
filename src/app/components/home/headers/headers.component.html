@@ -1,69 +1,134 @@
 <section id="videoHome">
-    <video src="assets/video/videofondo.mp4" id="homevideo" autoplay loop muted></video>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img
-                            src="assets/img/logo.png"
-                            alt="MyViews"
-                            width="125px"
-                            height="35px"
-                    />
+  <video src="assets/video/videofondo.mp4" id="homevideo" autoplay loop muted></video>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.png" alt="MyViews" width="125px" height="35px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="mx-auto">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Empresa
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="mx-auto">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Empresa
-                              </a>
-                              <div class="dropdown-menu" style="background-color: #161616" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item text-light" href="#">Acerca de MyVieews</a>
-                                <a class="dropdown-item text-light" href="#">Contáctanos</a>
-                              </div>
-                            </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Apoyo
-                            </a>
-                            <div class="dropdown-menu" style="background-color: #161616" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item text-light" href="#">Avisos legales</a>
-                              <a class="dropdown-item text-light" href="#">Reglamento comunitario</a>
-                            </div>
-                          </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#" tabindex="-1">
-                                    <i class="fas fa-user-tie"></i> Desarrolladores</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="btns form-inline my-2 my-lg-0">
-                        <button class="btnLogin btn btn-link mr-sm-3" type="submit" style="color: white">Entrar</button>
-                        <button class="btnRegister btn mr-sm-0" type="submit">Crear Cuenta</button>
-                    </div>
+                <div class="dropdown-menu" style="background-color: #161616" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item text-light" href="#">Acerca de MyVieews</a>
+                  <a class="dropdown-item text-light" href="#">Contáctanos</a>
                 </div>
-            </div>
-        </nav>
-    </header>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Apoyo
+                </a>
+                <div class="dropdown-menu" style="background-color: #161616" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item text-light" href="#">Avisos legales</a>
+                  <a class="dropdown-item text-light" href="#">Reglamento comunitario</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#" tabindex="-1">
+                  <i class="fas fa-user-tie"></i> Desarrolladores</a>
+              </li>
+            </ul>
+          </div>
+          <div class="btns form-inline my-2 my-lg-0">
+            <button class="btnLogin btn btn-link mr-sm-3" type="submit" style="color: white">Entrar</button>
+            <button class="btnRegister btn mr-sm-0"(click)="openLg(content1)" type="submit">Crear Cuenta</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 </section>
 <div class="conteinerTwo container-fluid">
-    <div class="row">
-        <div class="col-sm-5" style="height: 500px; width: 700px;">
-            <h1 class="text textUno">Haz volar tu mente</h1>
-            <h3 class="text texDos">Crea y comparte tus vídeos</h3>
-            <div class="btnsTwo form-inline my-2 my-lg-0">
-                <button class="btn btnUno btn-lg mr-sm-3" style="width: 225px; height: 60px" href="#"><i
-                        class="fas fa-play"></i> Ver vídeos
-                </button>
-                <button class="btn btnDos btn-lg my-2 mr-sm-0" style="width: 225px; height: 60px" href="#">Únete ahora
-                </button>
+  <div class="row" >
+    <div class="col-sm-5" style="height: 500px; width: 700px;">
+      <h1 class="text textUno">Haz volar tu mente</h1>
+      <h3 class="text texDos">Crea y comparte tus vídeos</h3>
+      <div class="btnsTwo form-inline my-2 my-lg-0">
+        <button class="btn btnUno btn-lg mr-sm-3" style="width: 225px; height: 60px" href="#"><i
+            class="fas fa-play"></i> Ver vídeos
+        </button>
+        <!-- Modal -->
+        <ng-template #content1 let-modal>
+          <div class="modalDatos">
+            <div class="modal-header border-0">
+              <h2 class="modal-title col-11 text-center">Registrate</h2>
+              <button type="button" class="close col-1" style="color: white" aria-label="Close"
+                (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-        </div>
+            <div class="modal-body border-0">
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="InpConAnt">NOMBRES</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="InpConNue">APELLIDOS</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="InpConConf">NOMBRE DE USUARIO</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="SelectG">GÉNERO</label>
+                    <select class="form-select form-control" id="SelectG">
+                      <option selected>Seleccionar</option>
+                      <option>Masculino</option>
+                      <option>Femenino</option>
+                      <option>Otros</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="form-group">
+                    <label for="InpCorr">FECHA DE NACIMIENTO</label>
+                    <input type="date" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="InpCorr">CORREO ELECTRÓNICO</label>
+                    <input type="email" class="form-control" id="InpCorr">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="InpTelef">TELÉFONO</label>
+                    <input type="number" class="form-control" id="InpTelef">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer border-0 d-flex justify-content-center">
+              <button type="button" class="btn btn-light mr-sm-5" (click)="modal.close('Save click')">GUARDAR</button>
+              <button type="button" class="btn btn-light mr-sm-0" (click)="modal.close('Close click')">CANCELAR</button>
+            </div>
+          </div>
+        </ng-template>
+        
+        <button class="btn btnDos btn-lg my-2 mr-sm-0" (click)="openLg(content1)"
+          style="width: 225px; height: 60px" href="#">Únete ahora
+        </button>
+      </div>
     </div>
+  </div>
 </div>
