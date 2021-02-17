@@ -53,6 +53,88 @@
     </header>
 </section>
 <div class="conteinerTwo container-fluid">
+  <div class="row" >
+    <div class="col-sm-5" style="height: 500px; width: 700px;">
+      <h1 class="text textUno">Haz volar tu mente</h1>
+      <h3 class="text texDos">Crea y comparte tus vídeos</h3>
+      <div class="btnsTwo form-inline my-2 my-lg-0">
+        <button class="btn btnUno btn-lg mr-sm-3" style="width: 225px; height: 60px" href="#"><i
+            class="fas fa-play"></i> Ver vídeos
+        </button>
+        <!-- Modal -->
+        <ng-template #content1 let-modal>
+          <div class="modalDatos">
+            <div class="modal-header border-0">
+              <h2 class="modal-title col-11 text-center">Registrate</h2>
+              <button type="button" class="close col-1" style="color: white" aria-label="Close"
+                (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body border-0">
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="InpConAnt">NOMBRES</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="InpConNue">APELLIDOS</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="InpConConf">NOMBRE DE USUARIO</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="SelectG">GÉNERO</label>
+                    <select class="form-select form-control" id="SelectG">
+                      <option selected>Seleccionar</option>
+                      <option>Masculino</option>
+                      <option>Femenino</option>
+                      <option>Otros</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="form-group">
+                    <label for="InpCorr">FECHA DE NACIMIENTO</label>
+                    <input type="date" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="InpCorr">CORREO ELECTRÓNICO</label>
+                    <input type="email" class="form-control" id="InpCorr">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="InpTelef">TELÉFONO</label>
+                    <input type="number" class="form-control" id="InpTelef">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer border-0 d-flex justify-content-center">
+              <button type="button" class="btn btn-light mr-sm-5" (click)="modal.close('Save click')">GUARDAR</button>
+              <button type="button" class="btn btn-light mr-sm-0" (click)="modal.close('Close click')">CANCELAR</button>
+            </div>
+          </div>
+        </ng-template>
+
+        <button class="btn btnDos btn-lg my-2 mr-sm-0" (click)="openLg(content1)"
+          style="width: 225px; height: 60px" href="#">Únete ahora
+        </button>
+      </div>
+    </div>
+  </div>
     <div class="row">
         <div class="col-sm-5" style="height: 500px; width: 700px;">
             <h1 class="text textUno">Haz volar tu mente</h1>

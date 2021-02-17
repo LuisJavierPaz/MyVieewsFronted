@@ -13,6 +13,7 @@ import {NgxDropzoneModule} from 'ngx-dropzone';
 import {PrincipalComponent} from './components/perfil/principal/principal.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {SidebarComponent} from './components/sidebar/sidebar.component';
 import {NavbarPrincipalComponent} from './components/navbar-principal/navbar-principal.component';
@@ -30,6 +31,7 @@ import {SectionHomeVideoComponent} from './components/home-video/section-home-vi
 import {SectionSearchVideoComponent} from './components/sub-home-search-component/section-search-video/section-search-video.component';
 import {SearchVideoServiceService} from './services/servicesVideo/search-video-service.service';
 import {SectionVideoVisibleServiceService} from './services/servicesVideo/visibeSections/section-video-visible-service.service';
+import { LoginComponent } from './components/login/login.component';
 import {CloudinaryModule} from '@cloudinary/angular-5.x';
 import * as Cloudinary from 'cloudinary-core';
 import {ViewVideoComponent} from './components/view-video/view-video.component';
@@ -66,8 +68,35 @@ import {ComentariosService} from './services/comentarios.service';
     VerCanalComponent,
     ContenidoCanalComponent
   ],
+    ViewVideoComponent
+
+    HeadersComponent,
+    HomeVideoComponent,
+    NavNavigationComponent,
+    AsideMenuComponent,
+    SectionHomeVideoComponent,
+    SectionSearchVideoComponent,
+    ViewVideoComponent,
+    SubHomeSearchComponentComponent,
+    PrincipalComponent,
+    SidebarComponent,
+    NavbarPrincipalComponent,
+    ContenidoPerfilComponent,
+    EstudioComponent,
+    SidebarEstudioComponent,
+    ContenidoEstudioPanelComponent,
+    ContenidoEstudioContenidoComponent,
+    ContenidoEstudioPersonalizarComponent,
+    VerCanalComponent,
+    ContenidoCanalComponent,
+    LoginComponent
+],
   imports: [
     BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,

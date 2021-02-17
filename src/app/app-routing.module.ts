@@ -59,12 +59,9 @@ const routes: Routes = [
     path: 'home/principal/canal',
     component: VerCanalComponent
   }
-
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {
-}
+export class AppRoutingModule { }
