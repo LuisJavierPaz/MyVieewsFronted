@@ -1,18 +1,9 @@
 export interface ModelVideo {
-  id?: number;
-  externaId?: string;
-  nombre?: string;
-  descripcion?: string;
-  fechaPublicacion?: Date;
-  directorio?: string;
-  visualizaciones?: number;
-  gustar?: number;
-  noGustar?: number;
-  estadoVideo?: string;
-  visibilidad?: string;
-  canal: Canal;
-  cat: Categoria;
+  video: Video;
+  externalIdCategoria: string;
+  idCanal: number;
 }
+
 export interface Canal {
   idcan?: number;
   fotoPerfil?: string;
@@ -26,4 +17,16 @@ export interface Categoria {
   idcat?: number;
   nomcat?: string;
   externaId?: string;
+}
+export interface Video{
+  externaId?: string;
+  nombre?: string;
+  descripcion?: string;
+  fechaPublicacion?: Date;
+  directorio?: string;
+  visualizaciones?: number;
+  gustar?: number;
+  noGustar?: number;
+  estadoVideo?: string;
+  visibilidad?: string;
 }

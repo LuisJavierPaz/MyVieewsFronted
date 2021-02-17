@@ -1,10 +1,10 @@
 
 <div class="class__contenedor__section "  >
-    <section class="class__section__video" *ngIf="listaVideos">
+    <section class="class__section__video" *ngIf="listaVideos" @introState>
 
         <div class="card  class__contenedor__card" *ngFor="let video of listaVideos">
           <div class="card-body">
-            <div class="card-header">
+            <div class="card-header" (click)="viewVideo(video.externalId, video)">
               <cl-video public-id="{{video.directorio}}"
                         autoplay>
                 <cl-transformation responsive angle="auto_left" background="#a3a1a1" delay="0" duration="3"
@@ -14,7 +14,6 @@
                 </cl-transformation>
               </cl-video>
             </div>
-
 
             <h6 class="card-title">{{video.nombre}}</h6>
             <p class="card-text">{{video.canal.nombreCanal}}</p>
@@ -30,7 +29,7 @@
 
         </div>
     </section>
-  <ngx-spinner>
+  <ngx-spinner >
     <div class="spinner-grow" role="status">
       <span class="sr-only">Loading...</span>
     </div>

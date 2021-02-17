@@ -10,7 +10,7 @@ export class SpinnerService {
   }
 
   public start(): any {
-    this.spinner.show( );
+    this.spinner.show();
   }
 
   public stop(): any {

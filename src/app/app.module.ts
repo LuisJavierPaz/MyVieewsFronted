@@ -3,15 +3,12 @@ import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {HttpClientModule} from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 
 import {HeadersComponent} from './components/home/headers/headers.component';
 import {HomeVideoComponent} from './components/home-video/home-video.component';
 import {RestServicesRestVideoService} from './services/rest-services-rest-video.service';
-import { NgxDropzoneModule} from 'ngx-dropzone';
-import { HeadersComponent } from './components/home/headers/headers.component';
-import { HomeVideoComponent } from './components/home-video/home-video.component';
-import { RestServicesRestVideoService} from './services/rest-services-rest-video.service';
+import {NgxDropzoneModule} from 'ngx-dropzone';
 
 
 import { ReactiveFormsModule} from '@angular/forms';
@@ -45,7 +42,16 @@ import {SectionVideoVisibleServiceService} from './services/servicesVideo/visibe
 import { LoginComponent } from './components/login/login.component';
 import {CloudinaryModule} from '@cloudinary/angular-5.x';
 import * as Cloudinary from 'cloudinary-core';
-import { ViewVideoComponent } from './components/view-video/view-video.component';
+import {ViewVideoComponent} from './components/view-video/view-video.component';
+import {ViewVideoService} from './services/view-video.service';
+import {SpinnerService} from './services/spinner/spinner.service';
+import {NgxSpinnerModule} from 'ngx-spinner';
+import {InterceptorService} from './services/spinner/interceptor.service';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { SubHomeSearchComponentComponent } from './components/sub-home-search-component/sub-home-search-component.component';
+import {RestCategoriaService} from './services/rest-categoria.service';
+import {ComentariosService} from './services/comentarios.service';
+
 
 @NgModule({
   declarations: [
@@ -94,8 +100,18 @@ import { ViewVideoComponent } from './components/view-video/view-video.component
 
     })
     NgxSpinnerModule,
+    BrowserAnimationsModule,
+    FormsModule
   ],
-  providers: [RestServicesRestVideoService, SearchVideoServiceService, SectionVideoVisibleServiceService],
+  providers: [RestServicesRestVideoService,
+    SearchVideoServiceService,
+    SectionVideoVisibleServiceService,
+    ViewVideoService,
+    SpinnerService,
+    {provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true},
+    RestCategoriaService,
+    ComentariosService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

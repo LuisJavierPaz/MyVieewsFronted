@@ -1,6 +1,11 @@
-.class__contenedor__nav{
+* {
+  border: none
+}
+
+.class__contenedor__nav {
   font-size: 2vh;
 }
+
 .class__nav__navegacion {
   padding-top: 2vh;
   padding-left: 3vw;
@@ -69,4 +74,70 @@
   justify-content: center;
   align-items: center;
 }
+
+.class__preview__video {
+  padding-bottom: 0.5em;
+}
+
+.class__contenedor__modal {
+  width: auto;
+}
+
+.modal-dialog {
+  width: auto;
+}
+
+.class__preview__video {
+  height: 100%;
+  width: auto;
+}
+
+.modal__detalle__video {
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: auto;
+  top: 0;
+}
+
+.class__contenedor__detalle__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  height: 100%;
+}
+
+.class__tag__video {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2em;
+}
+
+.class__visibilida > select,
+.class_categoria > select,
+textarea,
+.class__input__name__video {
+  padding-bottom: 0.5em;
+  border: white 1px solid;
+  color: white;
+  border-radius: 3px;
+}
+
+.class__contenedor__acciones__modal{
+  display: flex;
+  margin: 0.5em;
+  justify-content: flex-end;
+  align-items: center;
+}
+.class__contenedor__acciones__modal> button{
+margin-right: 0.8em ;
+}
+
+
+
+
 

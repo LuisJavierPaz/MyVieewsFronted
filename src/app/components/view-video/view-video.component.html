@@ -2,11 +2,11 @@
   <app-nav-navigation></app-nav-navigation>
   <div class="class__contenedor__body container-fluid">
     <div class="class__contenedor__left">
-      <div class="card">
+      <div class="card" *ngFor="let video of videosVistos">
 
         <div class="card-body">
           <div class="card-header">
-            <cl-video  public-id="MyVieews/orot9ejxnmh6yd2myaqz"
+            <cl-video  public-id="{{video.directorio}}"
                       controls autoplay loop>
               <cl-transformation responsive angle="auto_left" background="#a3a1a1"
                                  quality="auto"  width="700" height="350" crop="fill"
@@ -16,16 +16,16 @@
           </div>
           <div class="card-footer">
             <div class="class__principal__nombreVideo">
-              <h5>Aki va el nombre</h5>
+              <h5>{{video.nombre}}</h5>
             </div>
             <div class="class__contenedor__informacion__Video">
               <div class="class__contenedor__fecha__views">
-                <h6>AKi va la fecha</h6>
-                <h6>Aki va las view</h6>
+                <h6>{{video.fechaPublicacion}}</h6>
+                <h6>{{video.visualizaciones}}</h6>
               </div>
               <div class="class__contenedor__gustas__reporte">
-                <h6><i class="fas fa-heart"></i> Me gusta</h6>
-                <h6><i class="fas fa-heart-broken"></i> No me gusta</h6>
+                <h6><i class="fas fa-heart"></i> {{video.gusta}}</h6>
+                <h6><i class="fas fa-heart-broken"></i> {{video.noGustar}}</h6>
                 <label><i class="fas fa-flag"></i></label>
               </div>
             </div>
@@ -36,7 +36,7 @@
                 <div class="class__contenedor__canal">
 
                   <h4><label><i class="fas fa-user"></i></label>
-                    Nombre Canal</h4>
+                    {{video.canal.nombreCanal}}</h4>
                 </div>
                 <div class="class__contenedor__intereses">
                   <button class="btn btn-light class__miembro">MIEMBRO</button>
@@ -46,7 +46,7 @@
               </div>
               <div class="class__contenedor__descripcion ">
                 <div class="class__descripcion container">
-                  <label>AKi va la descripcion</label>
+                  <label>{{video.descripcion}}</label>
                 </div>
             </div>
             </div>
@@ -76,10 +76,10 @@
       </div>
     </div>
     <div class="class__contenedor__right">
-      <div class="class__contenedor__videosExtras">
+      <div class="class__contenedor__videosExtras" *ngFor="let vd of listaVideosDistintos">
         <div>
-          <div class="class__contenedor__videoExtra">
-            <cl-video public-id="v1612646271/MyVieews/videos-de-30-segundos_atak52"
+          <div class="class__contenedor__videoExtra" (click)="viewVideo(vd.externalId, vd)">
+            <cl-video public-id="{{vd.directorio}}"
                       autoplay>
               <cl-transformation responsive angle="auto_left" background="#a3a1a1" delay="0" duration="3"
                                  effect="transition"
@@ -89,34 +89,17 @@
             </cl-video>
           </div>
           <div class="class__contenedor__informacion__video">
-            <label>Nombre video</label>
-            <label>Nombre canal</label>
-            <label>Feccha publicacion</label>
+            <label>vd.nombre</label>
+            <label>{{vd.canal.nombreCanal}}</label>
+            <label>{{vd.fechaPublicacion}}</label>
           </div>
         </div>
-
       </div>
-      <div class="class__contenedor__videosExtras">
-        <div>
-          <div class="class__contenedor__videoExtra">
-            <cl-video public-id="v1612646271/MyVieews/videos-de-30-segundos_atak52"
-                      autoplay>
-              <cl-transformation responsive angle="auto_left" background="#a3a1a1" delay="0" duration="3"
-                                 effect="transition"
-                                 end-offset="2" quality="auto" start-offset="0" width="200" height="150" crop="fill"
-                                 fetch-format="auto">
-              </cl-transformation>
-            </cl-video>
-          </div>
-          <div class="class__contenedor__informacion__video">
-            <label>Nombre video</label>
-            <label>Nombre canal</label>
-            <label>Feccha publicacion</label>
-          </div>
-        </div>
-
-      </div>
-
     </div>
   </div>
+  <ngx-spinner bdColor="rgba(0, 0, 0, 0)">
+    <div class="spinner-grow" role="status" >
+      <span class="sr-only">Loading...</span>
+    </div>
+  </ngx-spinner>
 </div>

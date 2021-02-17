@@ -1,7 +1,7 @@
-<div class="container">
+
   <div class="class__contenedor__searchVideo ">
     <div class="class__contenedor__Videos" *ngFor="let video of listVideo">
-      <div class=" class__contenedor__Resultado__video">
+      <div class=" class__contenedor__Resultado__video" (click)="viewVideo(video.externalId, video)">
         <cl-video public-id="{{video.directorio}}"
                   autoplay>
           <cl-transformation responsive angle="auto_left" background="#a3a1a1" delay="0" duration="3"
@@ -22,11 +22,8 @@
         <h6>{{video.descripcion}}</h6>
       </div>
     </div>
-    <ngx-spinner
-      bdColor="rgba(0, 0, 0, 1)"
-      fullScreen=false>
-      <img src='https://media.giphy.com/media/o8igknyuKs6aY/giphy.gif'/>"
+    <ngx-spinner >
     </ngx-spinner>
   </div>
 
-</div>
+

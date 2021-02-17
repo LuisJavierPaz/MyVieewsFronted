@@ -21,11 +21,14 @@ const routes: Routes = [
     component: HomeVideoComponent
   },
   {
-    path: 'home/play',
+    path: 'home/play/:id',
     component: ViewVideoComponent
+  },
+  {
+    path: 'home/search/:nombre',
+    component: SubHomeSearchComponentComponent
   }
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
