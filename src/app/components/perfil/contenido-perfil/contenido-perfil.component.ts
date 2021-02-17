@@ -1,9 +1,8 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {CuentaService} from '../../../services/cuenta/cuenta.service';
-import {PersonaService} from '../../../services/persona/persona.service';
 import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import {Subscription} from 'rxjs';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-contenido-perfil',
@@ -14,13 +13,13 @@ import {Subscription} from 'rxjs';
 })
 export class ContenidoPerfilComponent implements OnInit {
   closeResult: any;
-  persona: any = [];
   cuenta: any = [];
+
   constructor(
     config: NgbModalConfig,
     public fb: FormBuilder,
+    private httpCliente: HttpClient,
     private modalService: NgbModal,
-    public personasService: PersonaService,
     public cuentasService: CuentaService
   ) {
     config.backdrop = 'static';
@@ -28,13 +27,6 @@ export class ContenidoPerfilComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.personasService.getPersona('kajbd87aiyd8iub3978uskkebfosefiusef4u0').subscribe(
-      res => {
-        this.persona = res;
-      },
-      error => {
-        console.log(error);
-      });
     this.cuentasService.getCuenta('adwa99awhd9adw78yh869823no89').subscribe(
       res => {
         this.cuenta = res;
