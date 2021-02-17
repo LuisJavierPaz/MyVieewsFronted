@@ -13,7 +13,6 @@ import {NgxDropzoneModule} from 'ngx-dropzone';
 import {PrincipalComponent} from './components/perfil/principal/principal.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {SidebarComponent} from './components/sidebar/sidebar.component';
 import {NavbarPrincipalComponent} from './components/navbar-principal/navbar-principal.component';
@@ -66,11 +65,21 @@ import {ComentariosService} from './services/comentarios.service';
     ContenidoEstudioContenidoComponent,
     ContenidoEstudioPersonalizarComponent,
     VerCanalComponent,
-    ContenidoCanalComponent
-  ],
-    ViewVideoComponent
-
+    ContenidoCanalComponent,
+    ViewVideoComponent,
     HeadersComponent,
+    PrincipalComponent,
+    SidebarComponent,
+    NavbarPrincipalComponent,
+    ContenidoPerfilComponent,
+    EstudioComponent,
+    SidebarEstudioComponent,
+    ContenidoEstudioPanelComponent,
+    ContenidoEstudioContenidoComponent,
+    ContenidoEstudioPersonalizarComponent,
+    VerCanalComponent,
+    ContenidoCanalComponent,
+    LoginComponent,
     HomeVideoComponent,
     NavNavigationComponent,
     AsideMenuComponent,
